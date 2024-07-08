@@ -31,8 +31,9 @@ Ready to transform your business with AI automation? Contact us today to schedul
 - **Phone**: 
 
 ---
-
+The Nohas Agency website is created and maintained by Harshith J.
 Thank you for considering Nohas Agency. We look forward to helping your business achieve new heights with AI automation!
+
 
 ---
 
