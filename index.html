@@ -1,0 +1,492 @@
+<html>
+    <head>
+        <title>Nohas</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/teams/team-1/assets/css/team-1.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+      
+      <div class="container">
+        <header class="d-flex flex-wrap justify-content-between align-items-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="Untitled_design__1_-removebg-preview (1).png" height="40" width="40">
+            <span class="fs-4 fw-bold" style="font-family: 'Montserrat', sans-serif;color: black;">  NAHOS</span>
+          </a>
+      
+          <ul class="nav nav-pills mx-auto">
+            <li class="nav-item"><a href="#" onclick="scrollToSection('services')"class="nav-link text-dark">Services</a></li>
+            <li class="nav-item"><a href="#" onclick="scrollToSection('process')"class="nav-link text-dark">Process</a></li>
+            <li class="nav-item"><a href="#" onclick="scrollToSection('team')"class="nav-link text-dark">Tribe</a></li>
+          </ul>
+      
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link active text-light" aria-current="page" style="background-color: black; color: white;">Get Started</a>
+            </li>
+          </ul>
+        </header>
+      </div>
+     <style> header .nav-pills {
+        flex-grow: 1;
+        justify-content: center;
+      }
+         </style>
+         <div class="hero">
+          <div class="hero-full">
+              <div class="hero-left">
+                  <div class="hero-left-content">
+                      <h1 style="color:black;"><strong>We Build</strong></h1>
+                      <h1 style="color:black;"><strong>AI Automations</strong></h1>
+                      <div class="heading-container">
+                      <h1 style="color: black;"><strong>For</strong></h1>
+                      <h1 style="color: black;"id="typing-heading"><strong>Business</strong></h1></div>
+                      <p>Embrace AI to revolutionize your customer support, supercharge your lead generation, and automate your workflows. Book a call to discuss a tailor-made strategy that works for you.</p>
+                  </div>
+              </div>
+              <div class="hero-right">
+                
+              </div>
+          </div>
+          <div class="hero-button">
+              <button>Let's talk <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
+                  <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
+                  <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
+              </svg></button>
+          </div>
+      </div>
+      
+      <style>
+        #typing-heading {
+          overflow: hidden;
+          white-space: nowrap;
+          margin: 0 auto;
+          letter-spacing: .15em;
+        }
+        
+        .heading-container {
+          display: inline-flex;
+          align-items: center;
+        }
+        
+        h1 {
+          margin: 0;
+          padding: 10;
+        }
+        </style>
+        
+        <script>
+          const phrases = [
+            " Business",
+            " CRM",
+            " Lead Gen",
+            " Success"
+          ];
+          
+          let phraseIndex = 0;
+          let letterIndex = 0;
+          let currentPhrase = "";
+          let typingSpeed = 100;
+          
+          function typeEffect() {
+            currentPhrase = phrases[phraseIndex];
+            
+            if (letterIndex < currentPhrase.length) {
+              document.getElementById("typing-heading").innerHTML = `<strong>${currentPhrase.substring(0, letterIndex + 1)}</strong>`;
+              letterIndex++;
+              setTimeout(typeEffect, typingSpeed);
+            } else {
+              setTimeout(deleteEffect, 1500);
+            }
+          }
+          
+          function deleteEffect() {
+            if (letterIndex > 0) {
+              document.getElementById("typing-heading").innerHTML = `<strong>${currentPhrase.substring(0, letterIndex - 1)}</strong>`;
+              letterIndex--;
+              setTimeout(deleteEffect, typingSpeed / 2);
+            } else {
+              phraseIndex = (phraseIndex + 1) % phrases.length;
+              setTimeout(typeEffect, typingSpeed);
+            }
+          }
+          
+          setTimeout(typeEffect, 1000);
+          </script>
+          
+<style>.hero {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.hero-full {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-left-content {
+  text-align: left;
+  padding-right: 2em; 
+  
+}
+
+.hero-left-content h1 {
+  font-size: 5em;
+  font-weight: bold;
+  margin-bottom: 0em;
+  font-family:'Montserrat', sans-serif;
+}
+
+.hero-left-content h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #666; 
+}
+
+.hero-left-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-right {
+  text-align: center;
+}
+
+.hero-right img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.hero-right p {
+  font-size: 1em;
+  color: #666; 
+  line-height: 1.6;
+}
+
+.hero-button {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.hero-button button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+.hero-button button svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+@media (max-width: 768px) {
+  .hero-full {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .hero-left-content, .hero-right {
+      text-align: center;
+      margin: 1em 0;
+  }
+
+  .hero-left-content h1, .hero-left-content h2 {
+      font-size: 2em;
+  }
+
+  .hero-right img {
+      width: 100px;
+  }
+}
+
+</style>     
+<br>
+<br>
+<br>
+                
+<section id="services" class="bsb-service-7 py-5 py-xl-8">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7">
+        <h2 class="fs-1 mb-2 text-center text-uppercase" style="font-family: 'Montserrat', sans-serif;">
+          Our Services
+        </h2>
+        <h5 class="display-12 mb-5 mb-xl-12 text-center">We support you in discovering and adapting advanced AI technologies, ensuring a smooth transition from initial concept to full implementation and subsequent stages.</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card border-0 bg-light shadow">
+          <div class="card-body text-center p-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chat-right-dots-fill" viewBox="0 0 16 16">
+              <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+            </svg>
+            <h4 class="fw-bold text-uppercase mt-3 mb-4" style="font-family: 'Montserrat', sans-serif;">Chatbot Development</h4>
+            <p class="text-secondary mb-4" style="font-family: 'Roboto', sans-serif; text-align: left;">
+              Customer Support<br>
+              Lead Generation<br>
+              Lead Qualification<br>
+              Recommendation<br>
+              Voice Bots<br>
+              Custom Solutions
+              <br>
+              <br>
+              <br>
+            </p>
+            <a href="#!" class="btn btn-dark fw-bold text-decoration-none">Discover More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border-0 bg-light shadow">
+          <div class="card-body text-center p-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-robot" viewBox="0 0 16 16">
+              <path d="M6 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0zM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"/>
+              <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"/>
+            </svg>
+            <h4 class="fw-bold text-uppercase mt-3 mb-4" style="font-family: 'Montserrat', sans-serif;">Workflow Automations</h4>
+            <p class="text-secondary mb-4" style="font-family: 'Roboto', sans-serif; text-align: left;">
+              Social Media Automation<br>
+              CRM Management<br>
+              Lead Qualification<br>
+              Onboarding Process<br>
+              Web Scraping Systems<br>
+              Natural Language to SQL<br>
+              Custom Solutions<br>
+              <br>
+            </p>
+            <a href="#!" class="btn btn-dark fw-bold text-decoration-none">Discover More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border-0 bg-light shadow">
+          <div class="card-body text-center p-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
+              <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
+              <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
+            </svg>
+            <h4 class="fw-bold text-uppercase mt-3 mb-4" style="font-family: 'Montserrat', sans-serif;">Individual Consultation</h4>
+            <p class="text-secondary mb-4" style="font-family: 'Roboto', sans-serif; text-align: left;">
+              Predictive Analytics<br>
+              Sentiment Analysis<br>
+              Image Recognition<br>
+              Natural Language Processing<br>
+              Chatbot Development<br>
+              Custom Solutions<br>
+              <br>
+              <br>
+            </p>
+            <a href="#!" class="btn btn-dark fw-bold text-decoration-none">Discover More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="process">
+          <div class="container px-4 py-5" id="hanging-icons">
+            <h1 class="pb-2" style="font-family: 'Montserrat', sans-serif; font-weight: bold;">
+              Our Process 
+            </h1>
+            <h5  >Enjoy a streamlined start with us, ditching traditional complex agency onboarding. Ready to begin? Book your intro call now.</p>
+              <button class="btn btn-dark btn-lg px-5 mb-5" type="button">
+                <i class="fas fa-phone-alt fa-lg"></i> Contact Us
+              </button>
+            
+
+
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-1-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm7.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="fs-2 text-body-emphasis" style="font-family: 'Montserrat', sans-serif; font-weight: bold;">Intro Call</h3>
+                  <h5>Schedule a call to explore our compatibility and discuss how our services can enhance your business. We aim to learn about your current operations and identify ways to add value.</p>
+      
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-2-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm4.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="fs-2 text-body-emphasis" style="font-family: 'Montserrat', sans-serif; font-weight: bold;">Strategy</h3>
+                  <h5 style="font-family: 'Roboto', sans-serif;">
+                    After understanding your needs, we'll set up a follow-up call to present our proposal. This will cover the expected deliverables, implementation strategy, timelines, and pricing details.
+                  </h5>
+                  
+                  
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-3-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm5.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="fs-2 text-body-emphasis" style="font-family: 'Montserrat', sans-serif; font-weight: bold;">Implementation</h3>
+                  <h5>After receiving your go-ahead, our team will start the process, ensuring you're updated throughout and maintaining close collaboration via our Slack channel.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .founder-section {
+              display: flex;
+              align-items: center;
+              margin-top: 1rem;
+            }
+            .founder-message {
+              margin-left: 20px;
+            }
+            .bg-light {
+              background-color: #f8f9fa!important;
+            }
+            .py-3 {
+              padding-top: 1rem!important;
+              padding-bottom: 1rem!important;
+            }
+            .py-md-5 {
+              padding-top: 3rem!important;
+              padding-bottom: 3rem!important;
+            }
+            .py-xl-8 {
+              padding-top: 4rem!important;
+              padding-bottom: 4rem!important;
+            }
+            .container {
+              margin-bottom: 2rem;
+            }
+            .container:last-of-type {
+              margin-top: 2rem;
+            }
+          </style>
+          </section>
+         
+         <section id="team" class="py-3 py-md-5 py-xl-8">
+          <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                <h2 class="mb-4 display-5 text-center" style="font-family: 'Montserrat', sans-serif; font-weight: bold;"><b>TRIBE</b></h2>
+                <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+              </div>
+            </div>
+          </div>
+          <div class="container overflow-hidden">
+            <div class="row gy-4 gy-lg-0 gx-xxl-5 founder-section">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+                  <div class="card-body p-0">
+                    <figure class="m-0 p-0">
+                      <img class="img-fluid" loading="lazy" src="IMG_20240312_213500_550.jpg" alt="" style="max-width: 100%; height: auto;">
+                      <figcaption class="m-0 p-4">
+                        <h4 class="mb-1" style="font-family: 'Montserrat', sans-serif; font-weight: bold;">Sohan E</h4>
+                        <p class="text-secondary mb-0">Chief</p>
+                        <div class="social-links mt-3">
+                          <a href="https://www.linkedin.com/your-linkedin" target="_blank" class="me-3"><img src="linkedin-logo.webp" alt="LinkedIn" style="width: 30px;"></a>
+                          <a href="https://www.instagram.com/your-instagram" target="_blank"><img src="iglogo.png" alt="Instagram" style="width: 30px;"></a>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="col founder-message">
+                <h1 class="mb-3" style="font-family: 'Montserrat', sans-serif; font-weight: bold;">
+                  Founder's Message
+                </h1>
+                <h5>
+                  As the founder of our AI automation agency, I'm thrilled to share our vision with you. We believe that artificial intelligence holds the key to revolutionizing how businesses operate. Our mission is to leverage cutting-edge AI technologies to streamline processes, enhance productivity, and foster innovation. By automating routine tasks, we enable organizations to focus on what truly matters—strategic growth and creativity. Our team of experts is dedicated to delivering bespoke AI solutions tailored to meet the unique needs of each client. Together, let's embrace the future of automation and unlock unparalleled potential for your business. Thank you for joining us on this exciting journey.
+                </h5>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <script>
+          function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+              section.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+          </script>
+          
+  <div class="container my-5">
+    <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+      <h1 class="text-body-emphasis" style="font-family: 'Montserrat', sans-serif; font-size: 3rem; font-weight: bold;">Got Questions?</h1>
+      <h3 class="col-lg-6 mx-auto mb-4">
+        Schedule your consultation with Nahos AI today.
+      </h3>
+      <button class="btn btn-dark btn-lg px-5 mb-5" type="button">
+        <i class="fas fa-phone-alt fa-lg"></i> Contact Us
+      </button>
+    </div>
+  </div>
+  
+  
+  </div>
+  
+          </div>
+          <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <centre><span class="mb-3 mb-md-0 text-body-secondary">© 2024 Nohas, Inc</span></centre>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+              </ul>
+            </footer>
+          </div>
+          <style>
+           body{background: linear-gradient(120deg, #5563e0, #ffffff, #293ceb);
+          }
+          
+
+
+          </style>
+    </body>
+</html>
